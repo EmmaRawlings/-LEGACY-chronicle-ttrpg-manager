@@ -1,0 +1,85 @@
+@import '../styles/variables.scss';
+
+$text-color: #e0e0e0;
+$tab-selected-bg-color: rgba(30, 30, 30, .7);
+$tab-hover-bg-color: rgba(20, 20, 20, .7);
+$tab-row-bg-color: rgba(0, 0, 0, .7);
+$tab-divider-color: rgba(127, 127, 127, .7);
+
+.tabRow {
+	color: $text-color;
+	background-color: $tab-row-bg-color;
+}
+
+.tab, .button {
+	display: inline-block;
+	cursor: pointer;
+	/*border: 1px solid #f0f0f0;*/
+	text-align: center;
+}
+
+.tab:not(:first-child) {
+	margin-left: -1px;
+}
+
+.tab {
+	min-width: 3em;
+  position: relative;
+	border-radius: 5px 5px 0 0;
+	padding: 0.1em 0.5em;
+}
+
+.tab:not(:first-child):after {
+  content: "";
+	border-left: 1px solid $tab-divider-color;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  height: 70%;
+  width: 1px;
+}
+
+.tab:hover {
+	background-color: $tab-hover-bg-color;
+}
+
+.tab.selected {
+	background-color: $tab-selected-bg-color;
+	border-right: none;
+	z-index: 1;
+}
+
+.tab.selected:after, .tab:hover:after {
+  content: none;
+}
+
+.tab.selected + .tab:after, .tab:hover + .tab:after,
+	.tab.selected + .button:after, .tab:hover + .button:after {
+  content: none;
+}
+
+.button {
+	margin-left: .5em;
+	width: 1.6em;
+	color: #d0d0d0;
+	border-radius: .8em;
+	position: relative;
+}
+
+.button:hover {
+	background-color: $tab-hover-bg-color;
+}
+
+.button:active {
+	background-color: transparent;
+}
+
+.tab + .button:after {
+  content: "";
+	border-left: 1px solid $tab-divider-color;
+  position: absolute;
+  bottom: 15%;
+  left: calc( -.5em - 1px );
+  height: 70%;
+  width: 1px;
+}

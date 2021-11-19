@@ -1,0 +1,58 @@
+.systemBrowser {
+  max-width: 36rem;
+  /*padding: 0 1rem;*/
+  margin: 0 auto 0;/* 6rem;*/
+  height: 100%;
+}
+
+.tabs {
+  text-align: center;
+}
+
+.tabs > div {
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.tabs > div.selected {
+  text-decoration: underline;
+}
+
+.tabPages {
+  height: calc( 100% - 40px );
+  position: relative;
+}
+
+.tabPages > div {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tabPages > div.selected {
+  pointer-events: all;
+  opacity: 1;
+  transition: opacity .4s ease-in-out;
+}
+
+.scroll {
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+.createForm {
+  font-size: 1.2em;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 10em;
+}

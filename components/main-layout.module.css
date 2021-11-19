@@ -1,0 +1,29 @@
+/*.outer {
+  height: 100%;
+  margin: 0;
+}
+
+.inner {
+  min-height: calc( 100% - 60px );
+  margin: 0;
+  position: relative;
+}*/
+
+.outer {
+  height: 100%;
+}
+.inner {
+  height: calc( 100% - 60px );
+}
+.inner > main {
+  height: 100%;
+  position: relative;
+}
+.inner > main > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*overflow: auto;*/
+}

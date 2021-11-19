@@ -1,0 +1,20 @@
+@import '../styles/variables.scss';
+
+$text-color: #e0e0e0;
+$tab-sheet-bg-color: rgba(10, 10, 10, .7);
+$tab-sheet-border-color: rgba(30, 30, 30, .7);
+
+.tabSheet {
+	color: $text-color;
+	background-color: $tab-sheet-bg-color;
+	border-top: 4px solid $tab-sheet-border-color;
+	padding: 10px;
+}
+
+.tabPage {
+	display: none;
+}
+
+.tabPage.selected {
+	display: block;
+}

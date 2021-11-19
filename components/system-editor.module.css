@@ -1,0 +1,49 @@
+.systemEditorOuter {
+  /* TODO: why is this misaligned by default? */
+  position: relative;
+  top: -7px;
+  height: calc( 100% + 7px );
+  overflow: hidden;
+}
+
+.systemEditorOuter > .image {
+	position: fixed;
+	top: 0;
+	left: 0;
+  width: 100%;
+  height: 100%;
+	overflow: hidden;
+}
+
+.systemEditorInner {
+  max-width: 49rem;
+  padding: 1rem 1rem;
+  margin: 0rem auto 0rem;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .8);
+  overflow-y: auto;
+}
+.systemEditorInner input, .systemEditorInner textarea {
+  display: block;
+  width: 100%;
+}
+
+.systemEditorInner .name {
+	font-size: 1.4em;
+}
+
+.systemEditorInner .version {
+}
+
+.systemEditorInner .author {
+}
+
+.systemEditorInner .privacy {
+	font-size: .8em;
+}
+
+.systemEditorInner .details {
+	font-size: .8em;
+}

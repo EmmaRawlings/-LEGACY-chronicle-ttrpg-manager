@@ -1,0 +1,13 @@
+.authenticationBar {
+	font-size: .8em;
+	text-align:  right;
+}
+
+.loginForm input, .signUpForm input {
+	display: block;
+}
+
+.loginForm h3, .signUpForm h3 {
+	margin-top:  0;
+	margin-bottom:  0.6em;
+}

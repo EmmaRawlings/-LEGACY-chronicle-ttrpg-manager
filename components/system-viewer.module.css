@@ -1,0 +1,52 @@
+.systemViewerOuter {
+  height: 100%;
+}
+
+.systemViewerOuter > .image {
+	position: fixed;
+	top: 0;
+	left: 0;
+  width: 100%;
+  height: 100%;
+	overflow: hidden;
+}
+
+.systemViewerInner {
+  max-width: 49rem;
+  padding: 0 1rem;
+  margin: 0rem auto 0rem;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .8);
+  overflow-y: auto;
+}
+
+.systemViewerInner .name {
+	font-size: 1.4em;
+}
+
+.systemViewerInner .version {
+}
+
+.systemViewerInner .author {
+}
+
+.systemViewerInner .privacy, .systemViewerInner .editButton {
+  font-size: .9em;
+  float: right;
+  padding-top: 0.5em;
+  margin-left: 0.3em;
+}
+
+.systemViewerInner .editButton:hover {
+  color: #c0c0c0;
+}
+
+.systemViewerInner .editButton:active {
+  color: inherit;
+}
+
+.systemViewerInner .details {
+	font-size: .8em;
+}
