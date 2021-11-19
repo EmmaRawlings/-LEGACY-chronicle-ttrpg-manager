@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+'Chronicle' ttrpg manager made in MERN stack. Users can create their own systems using a WYSIWYG editor, and view others' systems.
